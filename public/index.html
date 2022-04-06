@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Chat</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="page" id="loginPage">
+        <h1>Qual seu nome?</h1>
+        <input type="text" id="loginNameInput">
+    </div>
+
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">
+                <li class="m-status">Fulano entrou na sala</li>
+                <li class="m-status">Fulano saiu da sala</li>
+                <li class="m-txt"><span class="me">Ellivelton</span> Opa, tudo bem?</li>
+                <li class="m-txt"><span>Roberto</span> Tudo, e voce?</li>
+                
+            </ul>
+            <ul class="userList">
+                <li>Ellivelton (você)</li>
+                <li>Roberto</li>
+                <li>Maria</li>
+
+            </ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (e aperte ENTER)">
+        </div>
+    </div>
+</body>
+</html>
