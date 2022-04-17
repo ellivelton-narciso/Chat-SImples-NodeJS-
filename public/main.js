@@ -39,8 +39,6 @@ function addMessage (type, user, msg) {
     }
 }
 
-
-
 //Entrando no Chat
 loginInput.addEventListener('keyup', (e) =>{
     if(e.keyCode === 13) {
@@ -54,6 +52,7 @@ loginInput.addEventListener('keyup', (e) =>{
     }
 });
 
+//Enviando mensagem
 textInput.addEventListener('keyup', (e) => {
    if(e.keyCode ===13) {
        let txt = textInput.value.trim();
@@ -111,3 +110,25 @@ socket.on('reconnect', () => {
     }
   })
 
+
+//Botão responsivo do chat
+const btnMobShow = document.querySelector('#buttonShow');
+const btnMobClose = document.querySelector('#buttonClose');
+const listUser = document.querySelector('.userList');
+
+function btnShow() {
+    listUser.classList.add('active');
+    btnMobShow.classList.add('none');
+    btnMobShow.classList.remove('btn-mobile--show');
+    btnMobClose.classList.remove('none');
+    btnMobClose.classList.add('btn-mobile--close');
+};
+function btnClose() {
+    listUser.classList.remove('active');
+    btnMobClose.classList.remove('btn-mobile--close');
+    btnMobClose.classList.add('none');
+    btnMobShow.classList.add('btn-mobile--show');
+    btnMobShow.classList.remove('none');
+};
+btnMobShow.addEventListener('click', btnShow);
+btnMobClose.addEventListener('click', btnClose)

@@ -1,0 +1,37 @@
+/* Tela inicial */
+@media screen and (max-width: 430px){
+    .page h1{
+        font-size: 28px;
+    }
+    #loginNameInput {
+        max-width: 280px;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+/*Tela do chat */
+@media screen and (max-width: 430px){
+    .page {
+        max-height: calc(100vh - 56px);
+    }
+    .userList {
+        display: none;
+    }
+    .btn-mobile--show{
+        display: block;
+    }
+    .btn-mobile--close{
+        display: block;
+    }
+    .page {
+        height: 100vh;
+    }
+    .active {
+        display: block;
+        width: 35%;
+    }
+    .none {
+        display: none;
+    }
+}

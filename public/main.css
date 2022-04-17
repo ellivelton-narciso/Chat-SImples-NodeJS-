@@ -32,7 +32,6 @@ ul, li{
     flex: 1;
     width: 100%;
     display: flex;
-    background-color: #ccc;
 }
 .chatList{
     flex: 1;
@@ -55,6 +54,30 @@ ul, li{
 }
 .chatList li.m-txt span.me{
     color: #f00;
+}
+.btn-mobile--show{
+    background-image: url(./icon-menu.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 1%;
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.btn-mobile--close {
+    text-decoration: none;
+    position: absolute;
+    right: 1%;
+    font-size: 30px;
+    color: #000;
+    font-family: sans-serif;
+    display: none;
+}
+.btn-mobile--close:hover {
+    color: #00f;
 }
 .userList{
     width: 200px;
@@ -79,3 +102,4 @@ ul, li{
     outline: 0;
     border: 0;
 }
+
